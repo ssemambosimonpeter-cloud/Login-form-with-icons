@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        form{
+            background-color: rgb(165, 161, 161);
+            justify-self: center;
+            padding: 30px;
+            margin: 200px;
+            border-radius: 10px;
+            animation: fadein 1s infinite;
+        }
+        @keyframes fadein{
+            0%{
+                transition: (.9);
+                opacity: (.9);
+            }
+            100%{
+                opacity: (1);
+                transition: (2);
+            }
+        }
+        h2{
+            margin: 0px;
+            text-align: center;
+            padding: 0px;
+
+        }
+        .div-form{
+            position: relative;
+        }
+        .user{
+            position: absolute;
+            font-size: 30px;
+            top: 23px;
+            background-color: rgb(8, 199, 8);
+            padding: 7px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            color: white;
+            
+        }
+        .lock{
+            position: absolute;
+            font-size: 30px;
+            top: 23px;
+            background-color: rgb(8, 199, 8);
+            padding: 7px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            color: white;
+
+        }
+        .mail{
+            position: absolute;
+             font-size: 28px;
+            top: 23px;
+            background-color: rgb(8, 199, 8);
+            padding: 8px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            color: white;
+
+
+        }
+        .input2{
+            padding: 7px;
+            padding-left: 55px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 20px;
+            border: none;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        button{
+            padding: 12px 170px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(8, 199, 8);
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h2>login</h2>
+        <div class="div-form">
+            <label for="#">username</label><br>
+            <i class="fa-solid fa-user user" ></i>
+            <input class="input2" type="text">
+
+        </div>
+        <div class="div-form" >
+            <label for="">password</label><br>
+            <i class="fa-solid fa-lock lock"></i>
+            <input  class="input2" type="password">
+
+        </div>
+        <div class="div-form" >
+            <label for="">email</label><br>
+            <i class="fa-solid fa-envelope mail"></i>
+            <input  class="input2" type="text" >
+
+        </div>
+        <br><br>
+        <button>SUBMIT</button>
+    </form>
+    
+</body>
+</html>
